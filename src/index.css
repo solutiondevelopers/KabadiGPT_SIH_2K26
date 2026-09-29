@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Mukta', system-ui, -apple-system, sans-serif;
+    background-color: #f7f3ff;
+    color: #0f172a;
+  }
+}
+
+/* Light Purple / Lilac theme background utilities */
+.bg-light-purple-gradient {
+  background: radial-gradient(135% 100% at 50% 0%, #ede6ff 0%, #f7f3ff 50%, #fdfcff 100%);
+}
+
+.bg-purple-mesh {
+  background-color: #f6f2fe;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(168, 85, 247, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(192, 132, 252, 0.1) 0px, transparent 60%);
+}
+
+.glass-purple-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 180, 254, 0.6);
+  box-shadow: 0 4px 20px -2px rgba(147, 51, 234, 0.06);
+}
+
+.glass-purple-header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(224, 206, 253, 0.8);
+}
+
+/* Custom subtle scrollbar with light purple thumb */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 132, 252, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.7);
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
