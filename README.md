@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Kabad_GPT
 
-# Run and deploy your AI Studio app
+Kabad_GPT is an AI-powered waste management platform connecting **Households, NGOs, and an E-Store** to make waste collection, reuse, and resource management easier.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/88a312bb-c357-4009-a818-7bb45946942a
+- ♻️ Waste Management
+- 🏠 Household Portal
+- 🏢 NGO Portal
+- 🛒 E-Store
+- 🤖 AI Chatbot
+- 🔐 Role-Based Login
+- 📱 Responsive Web Design
+
+## Tech Stack
+
+- React
+- TypeScript / JavaScript
+- Google AI Studio
+- Node.js
+- Vercel
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
